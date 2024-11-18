@@ -1,0 +1,23 @@
+<script>
+    window.onload = function() {
+        const message = "{{message}}";
+        if (message) {
+            alert(message);
+        }
+    };
+</script>
+
+
+<center>
+<p>USER LOGIN PAGE !</p>
+
+
+    <form method="post" action="/auth">
+        <input name="username" type="text" placeholder="USERNAME">
+        <input name="password" type="password" placeholder="PASSWORD">
+        <input type="submit" value="LOGIN">
+    </form>
+
+    <p>Not Registered Yet ?<a href="/create_account"> Click Here </a> To Register</p>
+
+</center>
